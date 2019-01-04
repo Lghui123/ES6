@@ -8,9 +8,26 @@ let const声明的常量，不可重复声明。
 不完全解构       
 let [x, y] = [1, 2, 3];      //x =1 ,y = 2    
 let [a, [b], d] = [1, [2, 3], 4];       //a = 1,b = 2,d = 4    
-```  
+```
+
 ```    
 let [a,b]=[1];   //a=1,b=undefined     
 如果解构赋值没有在结构上成功配对，未配对的变量默认值为undefined 
 ```
-       
+
+``` 
+数组解构赋值
+ let obj = {
+  p: [
+    'Hello',
+    { y: 'World' }
+  ]
+};
+
+let { p, p: [x, { y }] } = obj;
+x // "Hello"
+y // "World"
+p // ["Hello", {y: "World"}]
+```
+
+##正则扩展
