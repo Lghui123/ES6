@@ -73,3 +73,4 @@ String.fromCodePoint(0x20BB7)   // "𠮷"
 'na'.repeat('na') // ""      Number('na')==NaN
 'na'.repeat('3') // "nanana"
 ```
+**padStart() padEnd()** padStart()用于头部补全，padEnd()用于尾部补全,接受两个参数，第一个参数是字符串补全生效的最大长度，第二个参数是用来补全的字符串。    
