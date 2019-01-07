@@ -40,7 +40,7 @@ s.codePointAt(0)  // 134071
 s.codePointAt(1)  // 57271   
 s.codePointAt(2)  // 97   
 ```
-**String.fromCodePoint()**码点返回对应字符    
+**String.fromCodePoint()** 码点返回对应字符    
 ```
 String.fromCodePoint(0x20BB7)   // "𠮷"    
 ```
