@@ -70,6 +70,6 @@ String.fromCodePoint(0x20BB7)   // "𠮷"
 ```
 如果repeat的参数是字符串，则会先转换成数字   
 ```
-'na'.repeat('na') // ""
+'na'.repeat('na') // ""      Number('na')==NaN
 'na'.repeat('3') // "nanana"
 ```
