@@ -61,12 +61,15 @@ String.fromCodePoint(0x20BB7)   // "𠮷"
 'na'.repeat(-1)       // RangeError
 ```
 如果参数是 0 到-1 之间的小数，则等同于 0，这是因为会先进行取整运算。0 到-1 之间的小数，取整以后等于-0，repeat视同为 0     
-```'na'.repeat(-0.9) // "" 
+```
+'na'.repeat(-0.9) // "" 
 ```
 参数NaN等同于 0      
-```'na'.repeat(NaN) // ""
+```
+'na'.repeat(NaN) // ""
 ```
 如果repeat的参数是字符串，则会先转换成数字   
-```'na'.repeat('na') // ""
+```
+'na'.repeat('na') // ""
 'na'.repeat('3') // "nanana"
 ```
