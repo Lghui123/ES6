@@ -33,4 +33,17 @@ p // ["Hello", {y: "World"}]
 ## 正则扩展
 
 ## 字符串扩展   
-**codePointAt**处理 4 个字节储存的字符，返回一个字符的码点。(从0开始返回第一个字符码点，如果第一个字符有四个字节，则codePointAt(1)返回后两个字节码点)   
+**codePointAt**处理 4 个字节储存的字符，返回一个字符的码点。(从0开始返回第一个字符码点，如果第一个字符有四个字节，则codePointAt(1)返回后两个字节码点) 
+```
+let s = '𠮷a';
+s.codePointAt(0)  // 134071    
+s.codePointAt(1)  // 57271   
+s.codePointAt(2)  // 97   
+```
+**String.fromCodePoint**码点返回对应字符    
+```
+String.fromCodePoint(0x20BB7)   // "𠮷"    
+```
+**includes()**：返回布尔值，表示是否找到了参数字符串。   
+**startsWith()**：返回布尔值，表示参数字符串是否在原字符串的头部。   
+**endsWith()**：返回布尔值，表示参数字符串是否在原字符串的尾部     
